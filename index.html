@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>HTML Academy: Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -16,7 +19,7 @@
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
+          <li><a href="pricelist.html">Прайс-лист</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
@@ -35,16 +38,16 @@
 
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <ul class="feature-list">
-          <li class="features-item">
+        <ul class="features-list">
+          <li class="feature-item">
             <h3>Быстро</h3>
             <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
           </li>
-          <li class="features-item">
+          <li class="feature-item">
             <h3>Круто</h3>
             <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! во всяком случае внешне.</p>
           </li>
-          <li class="features-item">
+          <li class="feature-item">
             <h3>Дорого</h3>
             <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
           </li>
@@ -52,99 +55,140 @@
       </section>
       <!-- end features -->
 
-      <!-- begin news -->
-      <section class="news">
-        <h2>Новости</h2>
+      <!-- begin index-columns -->
+      <div class="index-columns">
 
-        <ul class="news-list">
-          <li class="news-item">
-            <p>
-              Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
-          </p>
-          <time datetime="2018-01-11">11 января</time>
-          </li>
-          <li class="news-item">
-            <p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2018-18-01">18 января</time>
-          </li>
-        </ul>
-        <a href="#" class="button">Все новости</a>
-      </section>
-      <!-- end news -->
+        <!-- begin news -->
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>
+                Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+            </p>
+            <time datetime="2018-01-11">11 января</time>
+            </li>
+            <li class="news-item">
+              <p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+              <time datetime="2018-18-01">18 января</time>
+            </li>
+          </ul>
+          <a href="#" class="button">Все новости</a>
+        </section>
+        <!-- end news -->
 
-      <!-- begin gallery -->
-      <section class="gallery">
-        <h2>Фотогалерея</h2>
+        <!-- begin gallery -->
+        <section class="gallery">
+          <h2>Фотогалерея</h2>
+          <figure class="gallery-content">
+            <a href="#">
+              <img src="img/studio.jpg" width="286" height="164" alt="Интерьер">
+            </a>
+            <button class="button gallery-button gallery-button-back">Назад</button>
+            <button class="button gallery-button gallery-button-next">Вперед</button>
+        </section>
+        <!-- end gallery -->
+      </div>
+      <!-- end index-columns -->
 
-        <figure class="gallery-content">
-          <a href="#">
-            <img src="" width="286" height="164" alt="Интерьер">
-          </a>
-          <span>Назад</span>
-          <span>Вперед</span>
-        </figure>
-      </section>
-      <!-- end gallery -->
+      <!-- begin index-columns -->
+      <div class="index-columns">
+        <!-- begin contacts -->
+        <section class="contacts">
+          <h2>Контактная информация</h2>
 
-      <!-- begin contacts -->
-      <section class="contacts">
-        <h2>Контактная информация</h2>
+          <p>Барбершоп «Бородинский»<br>
+            адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
+            телефон: +7 (495) 666-02-66</p>
+          <a href="#" class="button">Как проехать</a>
+          <a href="#" class="button">Обратная связь</a>
+        </section>
+        <!-- end contacts -->
 
-        <p>Барбершоп «Бородинский»<br>
-          адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
-          телефон: +7 (495) 666-02-66</p>
-        <a href="#" class="button">Как проехать</a>
-        <a href="#" class="button">Обратная связь</a>
-      </section>
-      <!-- end contacts -->
+        <!-- begin appointment -->
+        <section class="appointment">
+          <h2>Записаться</h2>
 
-      <!-- begin appointment -->
-      <section class="appointment">
-        <h2>Записаться</h2>
-
-        <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <p>Дата <span>08.10.2017</span></p>
-        <p>Время <span>10:00</span></p>
-        <p>Ваше имя <span>Борода</span></p>
-        <p>Телефон <span>+7 123 456-78-90</span></p>
-        <input type="submit" value="Отправить">
-      </section>
-      <!-- end appointment -->
+          <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="appointment-item">
+              <label for="appointment-date">Дата</label>
+              <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-time">Время</label>
+              <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-name">Ваше имя</label>
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-phone">Телефон</label>
+              <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+        <!-- end appointment -->
+        </div>
+      <!-- end index-columns -->
     </main>
 
     <footer class="main-footer">
-      <p>Барбершоп «Бородинский»<br>
-      адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-      <span class="attention-text">Как нас найти?</span> <br>
-      телефон: +7 (495) 666-02-66</p>
-
-      <div class="main-footer-socilal">
-        <p>Давайте дружить!</p>
+      <p class="footer-contacts">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
         <ul>
-          <li><a href="#">В контакте</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-      <p class="main-footer-copyright">
-        Разработано:
-        <a href="http://htmlacademy.ru" class="button">html academy</a>
+      <p class="footer-copyright">
+        <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
 
     <!-- begin modal modal modal-login -->
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <p>Ведите, пожалуйста, свой логин и пароль</p>
-      <!-- Form -->
-      <span class="modal-close">x</span>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button
     </section>
     <!-- end modal modal modal-login -->
 
     <!-- begin modal modal-map -->
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <span class="modal-close">x</span>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <!-- end modal modal-map -->
   </body>
